@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  width: 100%;
+  /* overflow: hidden; */
+  /* overflow-y: hidden; */
+}
+li {
+  list-style: none;
+}
+/* 修饰滚动条 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 12px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  border: 1px solid #ccc;
+}
+
+/* 头部 */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  background-color: transparent;
+}
+header .logo {
+  text-align: center;
+  flex: 1;
+}
+nav {
+  flex: 4;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul li a {
+  padding: 0 6px 10px 6px;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+header .tele {
+  text-align: center;
+  flex: 1;
+  font-size: 22px;
+}
+
+/* 轮播图 */
+.lun {
+  position: relative;
+  height: 800px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide .caption {
+  position: absolute;
+}
+/* 企业标语 */
+.slogan {
+  position: relative;
+  /* width: 100%; */
+  padding: 0 40px 54px;
+}
+.slogan .bdl {
+  font-size: 70px;
+  line-height: 70px;
+  color: #000;
+}
+.slogan .title {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 23px;
+}
+.slogan .txt {
+  width: 685px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+}
+.slogan .bdr {
+  font-size: 70px;
+  line-height: 70px;
+  color: #000;
+  display: table;
+  position: absolute;
+  right: 40px;
+  top: 110px;
+}
+.slogan .bdr span {
+  width: 300px;
+  height: 3px;
+  background: #222;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  right: 65px;
+}
